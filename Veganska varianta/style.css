@@ -1,7 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
@@ -17,23 +22,121 @@ notebook/pc:
 }
 */
 
-
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .paticka {
-    text-align: center;
-    font-size: 14px;
-    color: silver;
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-    color: silver;
+  color: silver;
 }
-
 
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+.doporucujeme {
+  width: 100%;
+  color: white;
+  background-color: darkgray;
+}
+
+.recept {
+  min-height: 200px;
+}
+
+.hlavni-recept {
+  min-height: 200px;
+  background-image: url(images/salat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+  /* background: black url("images/salat.jpg") no-repeat fixed center; */
+}
+
+.recept-kategorie {
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.recept-komentare {
+  float: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+.recept-meta {
+  /* background-color: red; */
+}
+
+.recept-nazev {
+  position: absolute;
+  bottom: 0px;
+  /* background-color: red; */
+  font-size: 28px;
+  font-weight: 800;
+}
+.recepty {
+  min-height: 90px;
+  /* position: relative; */
+}
+
+.recept {
+  position: relative;
+  min-height: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.recept2 {
+  background-image: url(images/chlebicek.jpg);
+}
+
+.recept-nazev {
+  margin: 0px;
+  text-shadow: 3px 5px 2px #555555;
+}
+
+.recept3 {
+  background-image: url(images/tacos.jpg);
+}
+
+.recept4 {
+  background-image: url(images/cizrna.jpg);
+}
+
+.recept5 {
+  background-image: url(images/burger.jpg);
+}
+
+@media (min-width: 480px) {
+  .recept {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 860px) {
+  .recept {
+    width: 33%;
+    float: left;
+    min-height: 200px;
+  }
+  .hlavni-recept {
+    width: 33%;
+    float: left;
+    min-height: 400px;
+  }
+  .paticka {
+    clear: both;
+  }
+}
